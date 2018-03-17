@@ -1,0 +1,61 @@
+<html>
+  <head>
+    <title>Exercicio 8</title>
+    <style>
+    </style>
+  </head>
+  <body>
+    <p>Escreva uma função que leia o código de origem de um produto, via prompt, e imprima na tela a região de sua procedência conforme a tabela abaixo:
+
+      Código 1: Sul
+      Código 2: Norte
+      Código 3: Leste
+      Código 4: Oeste
+      Código 5 ou 6: Nordeste
+      Código 7, 8 ou 9: Sudeste
+      Código 10: Centro-Oeste
+      Código 11: Noroeste
+      Observação: Caso o código não seja nenhum dos especificados o produto deve ser encarado como Importado.
+    <script>
+      var codigo = prompt("digite um código:");
+      codigo = parseInt(codigo);
+      function regiao(codigo){
+        switch (codigo){
+          case 1:
+            return "SUL";
+          case 2:
+            return "NORTE";
+          case 3:
+            return "LESTE";
+          case 4:
+            return "OESTE";
+          case 5:
+            return "NORDESTE";
+          case 6:
+            return "NORDESTE";
+          case 7:
+            return "SUDESTE";
+          case 8:
+            return "SUDESTE";
+          case 9:
+            return "SUDESTE";
+          case 10:
+            return "CENTRO-OESTE";
+          case 11:
+            return "NOROESTE";
+          default:
+            return "IMPORTADO";
+
+        }
+
+
+
+
+      }
+      alert(regiao(codigo));
+
+
+
+    </script>
+  </body>
+</html>
